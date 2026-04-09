@@ -1,0 +1,6 @@
+Project Assumptions and Trade-offs:
+
+1. Project Structure: The separation between 'app' (frontend/backend) and 'deploy' (deployment definitions) is maintained for a clean separation of concerns.
+2. Build Artifacts: We assume standard build workflows (e.g., Vite/Webpack/Node) and have ignored 'dist', 'build', and 'node_modules' directories from version control to minimize repository footprint.
+3. Security: Environmental variables (.env files) are excluded from version control under the assumption they may contain sensitive secrets or API keys. Thus, secrets must be injected securely in higher environments.
+4. Scope: This commit aggregates initial project structures, but future updates might require refined CI/CD workflows and additional testing layers as features grow.
